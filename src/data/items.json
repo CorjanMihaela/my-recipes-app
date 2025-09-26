@@ -1,0 +1,16 @@
+{
+  "resources": [
+    { "id": "wood", "name": "Wood", "image": "🌲", "color": "#8B4513" },
+    { "id": "stone", "name": "Stone", "image": "🏔️", "color": "#808080" },
+    { "id": "iron", "name": "Iron", "image": "⛓️", "color": "#A9A9A9" },
+    { "id": "gold", "name": "Gold", "image": "🔱", "color": "#FFD700" }
+  ],
+  "craftedItems": [
+    { "id": "stick", "name": "Stick", "image": "📏", "color": "#D2B48C" },
+    { "id": "plank", "name": "Wood Plank", "image": "📦", "color": "#DEB887" },
+    { "id": "pickaxe", "name": "Pickaxe", "image": "⛏️", "color": "#696969" },
+    { "id": "sword", "name": "Sword", "image": "⚔️", "color": "#C0C0C0" },
+    { "id": "chest", "name": "Chest", "image": "🧰", "color": "#8B4513" },
+    { "id": "finalItem", "name": "Golden Artifact", "image": "🏆", "color": "#FFD700" }
+  ]
+}

@@ -1,0 +1,182 @@
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: linear-gradient( #8d95ba );
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 15px; /* mai compact */
+}
+
+.header h1 {
+  color: #ffd700;
+  font-size: 2.2em; /* redus pentru compact */
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+  margin-bottom: 5px;
+}
+
+.resetButton {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.25s ease;
+}
+
+.resetButton:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.resetButton:active {
+  transform: translateY(0) scale(1);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 12px;
+  width: 100%;
+  position: relative; /* Pentru a permite positioning relativ */
+}
+
+.centerPanel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.inventoryContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.resourcesContainer {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+/* Victory modal stilizat compact */
+.victoryModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.victoryContent {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  border: 3px solid #ff6b6b;
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.5);
+}
+
+.victoryContent h2 {
+  color: #8B4513;
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
+}
+
+.victoryContent p {
+  color: #8B4513;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.victoryContent button {
+  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(46, 204, 113, 0.4);
+  transition: all 0.25s ease;
+}
+
+.victoryContent button:hover {
+  background: linear-gradient(135deg, #229954 0%, #27ae60 100%);
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 18px rgba(46, 204, 113, 0.5);
+}
+.recipesPanel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+.discoveryPanel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 180px;
+  background-color: rgba(255,255,255,0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+
+
+
+/* Pentru ecrane mici, ajustează poziția */
+@media (max-width: 768px) {
+  .recipesPanel {
+    position: static;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .recipesPanel > div {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8em;
+  }
+  
+  .resourcesContainer {
+    position: static;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

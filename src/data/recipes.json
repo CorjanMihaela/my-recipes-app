@@ -1,0 +1,46 @@
+{
+  "recipes": [
+    {
+      "id": "plank_recipe",
+      "name": "Wood Plank",
+      "ingredients": { "wood": 1 },
+      "result": "plank",
+      "pattern": ["wood", null, null, null, null, null, null, null, null]
+    },
+    {
+      "id": "stick_recipe",
+      "name": "Stick",
+      "ingredients": { "plank": 2 },
+      "result": "stick",
+      "pattern": [null, "plank", null, null, "plank", null, null, null, null]
+    },
+    {
+      "id": "pickaxe_recipe",
+      "name": "Pickaxe",
+      "ingredients": { "stick": 2, "iron": 3 },
+      "result": "pickaxe",
+      "pattern": ["iron", "iron", "iron", null, "stick", null, null, "stick", null]
+    },
+    {
+      "id": "sword_recipe",
+      "name": "Sword",
+      "ingredients": { "stick": 1, "iron": 2 },
+      "result": "sword",
+      "pattern": [null, "iron", null, null, "iron", null, null, "stick", null]
+    },
+    {
+      "id": "chest_recipe",
+      "name": "Chest",
+      "ingredients": { "plank": 8 },
+      "result": "chest",
+      "pattern": ["plank", "plank", "plank", "plank", null, "plank", "plank", "plank", "plank"]
+    },
+    {
+      "id": "final_recipe",
+      "name": "Golden Artifact",
+      "ingredients": { "gold": 5, "pickaxe": 1, "sword": 1, "chest": 1 },
+      "result": "finalItem",
+      "pattern": ["gold", "pickaxe", "gold", "sword", "gold", "chest", "gold", "gold", "gold"]
+    }
+  ]
+}

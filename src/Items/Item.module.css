@@ -1,0 +1,33 @@
+.item {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #8b5a2b;
+  border-radius: 5px;
+  background-color: #d2b48c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  margin: 5px;
+  user-select: none;
+}
+
+.itemImage {
+  font-size: 30px;
+}
+
+.itemCount {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
